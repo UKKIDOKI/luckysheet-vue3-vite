@@ -31,7 +31,6 @@ const exportExcel = function(luckysheet, value) {
     const blob = new Blob([data], {
       type: 'application/vnd.ms-excel;charset=utf-8'
     })
-    console.log("导出成功！")
     FileSaver.saveAs(blob, `${value}.xlsx`)
   })
   return buffer
